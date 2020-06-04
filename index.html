@@ -1,0 +1,281 @@
+<html>
+<head>
+<title>My Portfolio</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+<!--------------------------Header Section------------------------>
+<section id="header">
+	<div class="container text-center">
+		<div class="user-box">
+			<h4>
+				<script type="text/javascript">
+						tday=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+						tmonth=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+
+						function GetClock(){
+						var d=new Date();
+						var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
+						var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
+
+						if(nhour==0){ap=" AM";nhour=12;}
+						else if(nhour<12){ap=" AM";}
+						else if(nhour==12){ap=" PM";}
+						else if(nhour>12){ap=" PM";nhour-=12;}
+
+						if(nmin<=9) nmin="0"+nmin;
+						if(nsec<=9) nsec="0"+nsec;
+
+						document.getElementById('clockbox').innerHTML=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+":"+nsec+ap+"";
+						}
+
+						window.onload=function(){
+						GetClock();
+						setInterval(GetClock,1000);
+						}
+					</script>
+					<div id="clockbox"></div>
+			</h4>
+			<img src="img/self.jpg">
+			<h1>RAJ KAMAL DAS</h1>
+			<p>SALES & MARKETING   ||   FREELANCE FRONT END DEVELOPER</p>
+		</div>
+	</div>
+	<div class="scroll-btn">
+		<div class="scroll-bar">
+			<a href="#about"><span> </span></a>
+		</div>
+	</div>
+</section>
+<!----------------------User Info Section------------------------>
+<section id="user-info">
+<div class="nav-bar">
+	<nav class="navbar navbar-expand-lg">
+		<a class="navbar-brand" href="#"><img src=""></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<i class="fa fa-bars"></i>
+			</button>
+	<div class="collapse navbar-collapse" id="navbarNav">
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item">
+				<a class="nav-link" href="#top">HOME</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#about">ABOUT</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#resume">RESUME</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#services">SERVICES</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#contact">CONTACT</a>
+			</li>
+		</ul>
+	</div>
+	</nav>
+</div>
+<!---------------about------------------>
+<div class="about container" id="about">
+<div class="row">
+<div class="col-md-6">
+	<h3>WHY SALES & MARKETING?</h3>
+	<p>Stepping into the sales and marketing industry was initially a hit and trial for me. Soon noticed the aura of selling
+	something to a customer even though he has no need of it. That is pure skill. Now I want to excel in it. This is also one of the vey
+	few industries where your growth and earnings are not limited to a particular profile. You sale more, you grow more you earn more.
+	This motivated me to stick and build a career in this industry.<p>
+	<div class="skills-bar">
+		<p>SALES</p>
+		<div class="progress">
+		<div class="progress-bar" style="width:85%">80%</div>
+		</div>
+		<p>MARKETING</p>
+		<div class="progress">
+		<div class="progress-bar" style="width:75%">85%</div>
+		</div>
+		<p>HUMAN RESOURCES</p>
+		<div class="progress">
+		<div class="progress-bar" style="width:65%">60%</div>
+		</div>
+		<p>MANAGEMENT</p>
+		<div class="progress">
+		<div class="progress-bar" style="width:50%">60%</div>
+		</div>
+		<p>LEADERSHIP</p>
+		<div class="progress">
+		<div class="progress-bar" style="width:80%">70%</div>
+		</div>
+	</div>
+</div>
+<div class="col-md-6">
+	<h3>WHY FREELANCE DEVELOPING?</h3>
+	<p>Being an average computer science graduate the only area of programming or writing codes which I am interested or I am 
+am to get myself involved is in designing something mostly websites. I get to use my imagination and creativity to build something
+which will probably never die. I think the feeling when you are randomly googling and suddenly you are in a website and then you realize
+its designed by you is probably worth it. And ofcourse freelancing because I can decide my own working hours and also feel like I am
+the boss. Haha !<p>
+	<div class="skills-bar">
+		<p>HTML5</p>
+		<div class="progress">
+		<div class="progress-bar" style="width:85%">85%</div>
+		</div>
+		<p>CSS3</p>
+		<div class="progress">
+		<div class="progress-bar" style="width:75%">75%</div>
+		</div>
+		<p>JAVASCRIPT</p>
+		<div class="progress">
+		<div class="progress-bar" style="width:65%">65%</div>
+		</div>
+		<p>BOOTSTRAP</p>
+		<div class="progress">
+		<div class="progress-bar" style="width:50%">50%</div>
+		</div>
+		<p>WORDPRESS</p>
+		<div class="progress">
+		<div class="progress-bar" style="width:80%">80%</div>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+<!-----------------social icons---------------->
+<div class="social-icons">
+	<ul>
+		<a href="https://www.linkedin.com/in/raj-kamal-das-bb5407115/"><li><i class="fa fa-linkedin"></i></li></a>
+		<a href="https://twitter.com/RajKamalDas10"><li><i class="fa fa-twitter"></i></li></a>
+		<a href="https://www.facebook.com/imrajkamal/"><li><i class="fa fa-facebook"></i></li></a>
+		<a href="https://www.instagram.com/rajkamal96/"><li><i class="fa fa-instagram"></i></li></a>
+		<a href="https://whydoweresfeber.travel.blog/"><li><i class="fa fa-wordpress"></i></li></a>
+	</ul>
+</div>
+<!---------------------resume---------------->
+<div class="resume" id="resume">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<h3 class="text-center">Experience</h3>
+				<ul class="timeline">
+					<li>
+						<h4><span>1.5YRS - </span>Business Associate</h4>
+						<b>Company</b> - Quality Application Solutions(APPCO)<br>
+						<b>Responsibilities</b> - Direct sales and marketing in B2B, B2C, B2G, B2I formats.<br>
+												On field Recruitment, Team Lead<br>
+												Market Testing in different industrial cities.<br>
+						<b>Session</b> - Mar 2019 - Present<br>
+					</li>
+				</ul>
+			</div>
+			<div class="col-md-6">
+				<h3 class="text-center">Projects</h3>
+				<ul class="timeline">
+					<li><h4>Parallax Template</h4></li>
+					<li><h4>Gym Template</h4></li>
+					<li><h4>Tutorial Class Template</h4></li>
+					<li><h4>Travel Template</h4></li>
+				</ul>
+			</div>
+			<div class="col-md-6">
+				<h3 class="text-center">Education</h3>
+				<ul class="timeline">
+					<li>
+						<h4><span>2018 - </span>Bachelor of Technology</h4>
+						<b>Institute</b> - National Institute of Technology, Silchar<br>
+						<b>Dicipline</b> - Computer Science and Engineering<br>
+						<b>Session</b> - 2014 - 2016<br>
+					</li>
+					<li>
+						<h4><span>2014 - </span>Higher Secondary</h4>
+						<b>Institute</b> - Cotton University, Guwahati<br>
+						<b>Session</b> - 2012 - 2014<br>
+					</li>
+					<li>
+						<h4><span>2012 - </span>High School</h4>
+						<b>Institute</b> - A.E.M.H.S<br>
+					</li>
+				</ul>
+			</div>
+			<div class="col-md-6">
+				<h3 class="text-center">Hobbies</h3>
+				<ul class="timeline">
+					<li><h4>Sports</h4><b>Cricket</b> - National level tournaments,certified.<br></li>
+					<li><h4>Travel</h4></li>
+					<li><h4>Travel Blogging</h4></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<!----------------------Services---------------->
+<div class="services" id="services">
+	<div class="container">
+		<h1 class="text-center">Offered Services</h1>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="services-box">
+					<i class="fa fa-rocket"></i><span>Blog Content</span>
+					<p>Currently accepting content writing offers for travel and sports blogs.</p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="services-box">
+					<i class="fa fa-line-chart"></i><span>Marketing</span>
+					<p>Open for full-time/part-time roles in the field of marketing for profiles like Market Research,
+					Market Analyst, Brand Advertising etc.</p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="services-box">
+					<i class="fa fa-laptop"></i><span>Development</span>
+					<p>Open for one-time projects, project collaboration, roles of part-time/full-time/contracts of 
+					frontend developing.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-------------------------contact---------------------->
+<div class="contact" id="contact">
+	<div class="container text-center">
+		<h1>Let's Connect</h1>
+		<div class="row">
+			<div class="col-md-4">
+				<i class="fa fa-phone"></i>
+				<p>NA</P>
+			</div>
+			<div class="col-md-4">
+				<i class="fa fa-envelope"></i>
+				<p>rajofficial2507@gmail.com</P>
+			</div>
+			<div class="col-md-4">
+				<i class="fa fa-internet-explorer"></i>
+				<p>NA</P>
+			</div>
+		</div>
+		<button type="button" class="btn btn-primary"><i class="fa fa-download"></i>Resume</button>
+		<button type="button" class="btn btn-primary"><i class="fa fa-rocket"></i>Hire Me</button>
+	</div>
+	<div class="footer text-center">
+		<p> &copy; Portfolio Website</p>
+	</div>
+</div>
+</section>
+<!------------Smooth Scroll--------------------->
+<script src="smooth-scroll.js"></script>
+	<script>
+	var scroll = new SmoothScroll('a[href*="#"]');
+	</script>
+
+
+</body>
+
+
+
+</html>
